@@ -40,6 +40,7 @@ const [data, updateData] = useState(sampleData);
 return (
     <div>
         <Navbar></Navbar>
+        {/* hero */}
         <div className="flex justify-evenly items-center flex-wrap max-w-screen-xl mt-20">
             <div className="md:text-xl font-medium text-purple 200 ml-12">
                 <h2 className="text-5xl text-purple-200 pb-5 w-7/12">Discover, Collect & Sell Popular Nfts</h2>
@@ -49,7 +50,9 @@ return (
             <div className="mt-5 flex-wrap max-w-screen-xl">
                 <img src={hero} alt="" width={420} height={420} className="inline-block -mt-2"/>
             </div>
-        </div>       
+        </div>
+
+        {/* NFT card */}       
         <div className="flex flex-col place-items-center mt-20 bg-slate-900">
             <div className="md:text-4xl font-bold text-purple-200 pt-8">
                 Awesome NFTs Art Sell and Earn
@@ -59,7 +62,9 @@ return (
                     return <NFTTile data={value} key={index}></NFTTile>;
                 })}
             </div>
-        </div>        
+        </div>  
+
+        {/* Newsletter */}      
         <div className="flex justify-evenly items-center flex-wrap max-w-screen-xl mt-20">
             <div className="md:text-2xl text-purple-200 pt-8">
                 <h2 className="text-4xl text-purple-200 pb-4 font-bold">Newsletters</h2>
@@ -69,7 +74,9 @@ return (
                 <input className="py-2 px-6 bg-transparent border-purple-200 border-2 text-purple-200" type="email" placeholder="Enter your email"/>
                 <button className="bg-blue-500 text-purple-900 font-bold py-3 px-4 text-sm border-1 border-blue-500 rounded-r rounded-b" href="#">Subscribe</button>
             </div>
-        </div>        
+        </div>     
+
+           {/* footer */}
         <div className="flex flex-col place-items-center mt-20 bg-slate-900">
             <div className="md:text-lg font-normal text-purple-200 pt-8 pb-4">
                 copyright 2023 BETFTs, All rights reserved
