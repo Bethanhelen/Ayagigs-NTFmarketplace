@@ -69,7 +69,12 @@ return (
                 <input className="py-2 px-6 bg-transparent border-purple-200 border-2 text-purple-200" type="email" placeholder="Enter your email"/>
                 <button className="bg-blue-500 text-purple-900 font-bold py-3 px-4 text-sm border-1 border-blue-500 rounded-r rounded-b" href="#">Subscribe</button>
             </div>
-        </div>          
+        </div>        
+        <div className="flex flex-col place-items-center mt-20 bg-slate-900">
+            <div className="md:text-lg font-normal text-purple-200 pt-8 pb-4">
+                copyright 2023 BETFTs, All rights reserved
+            </div>
+        </div>        
     </div>
 );
 
