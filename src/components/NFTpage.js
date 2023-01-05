@@ -16,7 +16,7 @@ const [currAddress, updateCurrAddress] = useState("0x");
             <Navbar></Navbar>
             <div className="flex ml-20 mt-20">
                 <img src={data.image} alt="" className="w-2/5" />
-                <div className="text-xl ml-20 space-y-8 text-white shadow-2xl rounded-lg border-2 p-5">
+                <div className="text-xl ml-20 space-y-8 text-purple-200 shadow-2xl rounded-lg border-2 p-5">
                     <div>
                         Name: {data.name}
                     </div>
@@ -35,7 +35,7 @@ const [currAddress, updateCurrAddress] = useState("0x");
                     <div>
                     { currAddress == data.owner || currAddress == data.seller ?
                         <div className="text-emerald-700">You are the owner of this NFT</div>
-                        : <button className="enableEthereumButton bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm">Buy this NFT</button>
+                        : <button className="enableEthereumButton bg-blue-500 hover:bg-blue-700 text-purple-900 font-bold py-2 px-4 rounded text-sm">Buy this NFT</button>
                     }
                     
                     <div className="text-green text-center mt-3">{message}</div>
