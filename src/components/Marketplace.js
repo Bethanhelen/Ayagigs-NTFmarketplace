@@ -1,4 +1,5 @@
 import Navbar from "./Navbar";
+import hero from "../hero.jpg"
 import NFTTile from "./NFTTile";
 import MarketplaceJSON from "../Marketplace.json";
 import axios from "axios";
@@ -39,8 +40,18 @@ const [data, updateData] = useState(sampleData);
 return (
     <div>
         <Navbar></Navbar>
-        <div className="flex flex-col place-items-center mt-20">
-            <div className="md:text-xl font-bold text-white">
+        <div className="flex justify-evenly items-center flex-wrap max-w-screen-xl mt-20">
+            <div className="md:text-xl font-medium text-purple 200 ml-12">
+                <h2 className="text-5xl text-purple-200 pb-5 w-7/12">Discover, Collect & Sell Popular Nfts</h2>
+                <p className="text-purple-200 pb-12 w-5/12 opacity-80">The world biggest collection of crypto collectible & Non-fungible token</p>
+                <a className="bg-blue-500 text-purple-900 font-bold py-2 px-4 rounded text-sm" href="#">Create Nfts</a>
+            </div>
+            <div className="mt-5 flex-wrap max-w-screen-xl">
+                <img src={hero} alt="" width={420} height={420} className="inline-block -mt-2"/>
+            </div>
+        </div>       
+        <div className="flex flex-col place-items-center mt-20 bg-slate-900">
+            <div className="md:text-2xl font-bold text-purple-200 pt-5">
                 Top NFTs
             </div>
             <div className="flex mt-5 justify-between flex-wrap max-w-screen-xl text-center">
