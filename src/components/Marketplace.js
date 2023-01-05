@@ -51,15 +51,25 @@ return (
             </div>
         </div>       
         <div className="flex flex-col place-items-center mt-20 bg-slate-900">
-            <div className="md:text-2xl font-bold text-purple-200 pt-5">
-                Top NFTs
+            <div className="md:text-4xl font-bold text-purple-200 pt-8">
+                Awesome NFTs Art Sell and Earn
             </div>
             <div className="flex mt-5 justify-between flex-wrap max-w-screen-xl text-center">
                 {data.map((value, index) => {
                     return <NFTTile data={value} key={index}></NFTTile>;
                 })}
             </div>
-        </div>            
+        </div>        
+        <div className="flex justify-evenly items-center flex-wrap max-w-screen-xl mt-20">
+            <div className="md:text-2xl text-purple-200 pt-8">
+                <h2 className="text-4xl text-purple-200 pb-4 font-bold">Newsletters</h2>
+                <p className="text-purple-200 pb-12 opacity-80 text-xl">Get the latest popular NFTs with minimum price</p>
+            </div>
+            <div className="mt-5 flex-wrap max-w-screen-xl">
+                <input className="py-2 px-6 bg-transparent border-purple-200 border-2 text-purple-200" type="email" placeholder="Enter your email"/>
+                <button className="bg-blue-500 text-purple-900 font-bold py-3 px-4 text-sm border-1 border-blue-500 rounded-r rounded-b" href="#">Subscribe</button>
+            </div>
+        </div>          
     </div>
 );
 
